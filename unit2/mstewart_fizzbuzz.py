@@ -1,17 +1,11 @@
 r = int(input())
 for x in range(1,r + 1):
     if x % 3 == 0 and x % 5 == 0:
-        fb = x
-        fb = "FizzBuzz"
-        print(fb)
+        print("FizzBuzz")
     elif x % 5 == 0:
-        b = x
-        b = "Buzz"
-        print(b)
+        print("Buzz")
     elif x % 3 == 0 :
-        f = x
-        f = "Fizz"
-        print(f)
+        print("Fizz")
     else:
         print(x)
     

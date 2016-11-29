@@ -73,3 +73,11 @@ print("")
 print("Player Wins: {}".format(player_wins))
 print("Computer Wins: {}".format(comp_wins))
 print("Ties: {}".format(ties))
+print("")
+print("")
+if player_wins > comp_wins:
+    print("PLAYER WINS!")
+elif comp_wins > player_wins:
+    print("COMPUTER WINS!")
+else:
+    print("TIE!")

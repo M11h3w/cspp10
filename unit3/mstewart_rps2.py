@@ -12,18 +12,18 @@ comp_move = random.choice([r,p,s])
 
 def get_rounds(rounds):
     rounds = int(input("How many rounds do you want to play from 1 to 9: "))
-# def get_p1_move(p1_move):
-#     # round_num = round_num + 1
-#     # print("Round {}".format(round_num))
-#     p1_move = input("Enter your move from [r|p|s]: ")
-#     if p1_move == "r":
-#         print("You picked: Rock")
-#     elif p1_move == "p":
-#         print("You picked: Paper")
-#     elif p1_move == "s":
-#         print("You picked: Scissors")
-# def get_comp_move(comp_move):
-#     print("Computer picked: {}".format(comp_move))
+def get_p1_move(p1_move):
+    # round_num = round_num + 1
+    # print("Round {}".format(round_num))
+    p1_move = input("Enter your move from [r|p|s]: ")
+    if p1_move == "r":
+        print("You picked: Rock")
+    elif p1_move == "p":
+        print("You picked: Paper")
+    elif p1_move == "s":
+        print("You picked: Scissors")
+def get_comp_move(comp_move):
+    print("Computer picked: {}".format(comp_move))
 def get_round_winner(p1_move,comp_move,player_wins,comp_wins,ties):
     p1_move = input("Enter your move from [r|p|s]: ")
     comp_move = random.choice([r,p,s])
@@ -52,7 +52,7 @@ def get_round_winner(p1_move,comp_move,player_wins,comp_wins,ties):
         print("Computer picked: Rock")
         print("Player Won!")
         player_wins = player_wins + 1
-    elif comp_move == "s" and comp_move == r:
+    elif p1_move == "s" and comp_move == r:
         print("You picked: Scissors")
         print("Computer picked: Rock")
         print("Computer Won!")
@@ -113,7 +113,6 @@ def print_score(player_wins,comp_wins,ties):
     print("Computer Wins: {}".format(comp_wins))
     print("Ties: {}".format(ties))
 def rps(p1_move,comp_move,player_wins,comp_wins,ties,rounds):
-    rounds = get_rounds(rounds)
     for rounds in range(rounds):
         # get_p1_move(p1_move)
         # get_comp_move(comp_move)
