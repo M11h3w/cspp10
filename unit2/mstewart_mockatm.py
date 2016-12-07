@@ -2,7 +2,7 @@ bank_account = 10000
 print(bank_account)
 print("1. Withdraw \n2. Deposit \n3. Exit")
 choice = input("Welcome to ATM! Pick from above [1|2|3]:")
-while(bank_account >= 0): #student completes while loop
+while(bank_account >= 0):
     if choice == "1":
         amount = input("How much to withdraw: ")
         bank_account = bank_account - int(amount)

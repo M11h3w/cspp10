@@ -19,13 +19,16 @@ while player_bank > 0 and casino_bank > 0:
         if dice_total == 2 or dice_total == 3 or dice_total == 12:
             casino_bank = casino_bank + bet
             player_bank = player_bank - bet
-            print("You rolled a {}. You lose the round!".format(dice_total))
-            print("You have ${}".format(player_bank))
+            print("You rolled a {}. You lost the round!".format(dice_total))
+            print("You have ${}.".format(player_bank))
+            print("")
         elif dice_total == 7 or dice_total == 11:
+            player_bank = player_bank - bet
             bet = bet * 2
             player_bank = player_bank + bet
             print("You rolled a {}. You win the round!".format(dice_total))
-            print("You have ${}".format(player_bank))
+            print("You have ${}.".format(player_bank))
+            print("")
         elif dice_total == 4 or dice_total == 5 or dice_total == 6 or dice_total == 8 or dice_total == 9 or dice_total == 10:
             point_number = dice_total
             print("Your point number is {}".format(point_number))
@@ -39,13 +42,15 @@ while player_bank > 0 and casino_bank > 0:
                 player_bank = player_bank - bet
                 print("You rolled a 7. You lost the round!")
                 print("You have ${}.".format(player_bank))
+                print("")
             elif dice_total == point_number:
+                player_bank = player_bank - bet
                 bet = bet * 2
                 player_bank = player_bank + bet
                 print("You rolled your point number! You win the round!")
-                print("You have ${}".format(player_bank))
+                print("You have ${}.".format(player_bank))
                 print("")
-            elif dice_total != 7 or dice_total != point_number:
+            while dice_total != 7 or dice_total != point_number:
                 print("No 7 or {}. Reroll!".format(point_number))
                 enter = input("Press enter to continue")
                 print("")
@@ -60,17 +65,13 @@ while player_bank > 0 and casino_bank > 0:
                         print("You rolled a 7. You lost the round!")
                         print("You have ${}.".format(player_bank))
                         print("")
+                        break
                     elif dice_total == point_number:
+                        player_bank = player_bank - bet
                         bet = bet * 2
                         player_bank = player_bank + bet
                         print("You rolled your point number! You win the round!")
-                        print("You have ${}".format(player_bank))
+                        print("You have ${}.".format(player_bank))
                         print("")
-                    elif dice_total != 7 or dice_total != point_number:
-                        print("No 7 or {}. Reroll!".format(point_number))
-                        enter = input("Press enter to continue")
-                        print("")
-                        dice1 = random.choice([1,2,3,4,5,6])
-                        dice2 = random.choice([1,2,3,4,5,6])
-                        dice_total = dice1 + dice2
-                        print("The dice is thrown: {} and {}, {} total".format(dice1, dice2, dice_total))   
+                        break
+            
