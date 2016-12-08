@@ -10,6 +10,9 @@ while player_bank > 0 and casino_bank > 0:
     elif bet < 0:
         print("You can't bet a negative number!")
         print("")
+    elif bet == 0:
+        print("You didn't bet anything.")
+        print("")
     elif bet > 0 and bet <= player_bank:
         print("")
         dice1 = random.choice([1,2,3,4,5,6])
@@ -74,4 +77,7 @@ while player_bank > 0 and casino_bank > 0:
                         print("You have ${}.".format(player_bank))
                         print("")
                         break
+    if casino_bank == 0:
+        print("You beat the casino!")
+        break
             
