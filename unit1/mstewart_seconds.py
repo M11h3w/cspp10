@@ -1,4 +1,4 @@
-s = input()
+s = input("Enter any amount of seconds: ")
 min = int(int(s) / 60 % 60)
 sec = int(s) % 60
 hr = int(float(s) / 3600)
