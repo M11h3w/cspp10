@@ -1,4 +1,5 @@
-r = int(input())
+r = int(input("How high do you want to count: "))
+print("")
 for x in range(1,r + 1):
     if x % 3 == 0 and x % 5 == 0:
         print("FizzBuzz")
@@ -8,4 +9,3 @@ for x in range(1,r + 1):
         print("Fizz")
     else:
         print(x)
-    

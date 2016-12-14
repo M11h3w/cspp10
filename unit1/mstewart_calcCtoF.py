@@ -1,4 +1,4 @@
-c = input()
+c = input("Enter a temp in celsius: ")
 f = float(c) * 1.8 + 32
 c_s = str(c)
 f_s = str(f)
