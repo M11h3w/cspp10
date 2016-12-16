@@ -4,14 +4,10 @@ player2_bank = 100
 print("Player 1 has ${}".format(player1_bank))
 print("Player 2 has ${}".format(player2_bank))
 player_pick = random.choice([1,2])
-while player1_bank > 0 and player2_bank > 0:
-    if player_pick == 1:
-        print("Player 1 is the shooter")
-        print("")
-    elif player_pick == 2:
-        print("Player 2 is the shooter")
-        print("")
-    if player_pick == 1:
+if player_pick == 1:
+    print("Player 1 is the shooter")
+    print("")
+    while player1_bank > 0 and player2_bank > 0:
         bet = int(input("Player 2 place your bet: "))
         if bet > player2_bank:
             print("You don't have that much money!")
@@ -22,6 +18,7 @@ while player1_bank > 0 and player2_bank > 0:
         elif bet == 0:
             print("You didn't bet anything.")
             print("")
+        elif bet 
         elif bet > 0 and bet <= player2_bank:
             print("")
             dice1 = random.choice([1,2,3,4,5,6])
@@ -32,6 +29,7 @@ while player1_bank > 0 and player2_bank > 0:
                 player1_bank = player1_bank + bet
                 player2_bank = player2_bank - bet
                 print("You rolled a {}. You lost the round!".format(dice_total))
+                print("")
                 print("Player 1 has ${}".format(player1_bank))
                 print("Player 2 has ${}".format(player2_bank))
                 print("")
@@ -41,6 +39,7 @@ while player1_bank > 0 and player2_bank > 0:
                 bet = bet * 2
                 player2_bank = player2_bank + bet
                 print("You rolled a {}. You win the round!".format(dice_total))
+                print("")
                 print("Player 1 has ${}".format(player1_bank))
                 print("Player 2 has ${}".format(player2_bank))
                 print("")
@@ -60,6 +59,7 @@ while player1_bank > 0 and player2_bank > 0:
                         player1_bank = player1_bank + bet
                         player2_bank = player2_bank - bet
                         print("You rolled a 7. You lost the round!")
+                        print("")
                         print("Player 1 has ${}".format(player1_bank))
                         print("Player 2 has ${}".format(player2_bank))
                         print("")
@@ -70,6 +70,7 @@ while player1_bank > 0 and player2_bank > 0:
                         bet = bet * 2
                         player2_bank = player2_bank + bet
                         print("You rolled your point number! You win the round!")
+                        print("")
                         print("Player 1 has ${}".format(player1_bank))
                         print("Player 2 has ${}".format(player2_bank))
                         print("")
@@ -88,6 +89,7 @@ while player1_bank > 0 and player2_bank > 0:
                                     player1_bank = player1_bank + bet
                                     player2_bank = player2_bank - bet
                                     print("You rolled a 7. You lost the round!")
+                                    print("")
                                     print("Player 1 has ${}".format(player1_bank))
                                     print("Player 2 has ${}".format(player2_bank))
                                     print("")
@@ -98,14 +100,21 @@ while player1_bank > 0 and player2_bank > 0:
                                     bet = bet * 2
                                     player2_bank = player2_bank + bet
                                     print("You rolled your point number! You win the round!")
+                                    print("")
                                     print("Player 1 has ${}".format(player1_bank))
                                     print("Player 2 has ${}".format(player2_bank))
                                     print("")
                                     break
         if player1_bank == 0:
-            print("Player 2 Wins!")
+            print("PLAYER 2 WINS!")
             break
-    elif player_pick == 2:
+        elif player2_bank == 0:
+            print("PLAYER 1 WINS!")
+            break
+elif player_pick == 2:
+    print("Player 2 is the shooter")
+    print("")
+    while player1_bank > 0 and player2_bank > 0:
         bet = int(input("Player 1 place your bet: "))
         if bet > player1_bank:
             print("You don't have that much money!")
@@ -126,6 +135,7 @@ while player1_bank > 0 and player2_bank > 0:
                 player2_bank = player2_bank + bet
                 player1_bank = player1_bank - bet
                 print("You rolled a {}. You lost the round!".format(dice_total))
+                print("")
                 print("Player 1 has ${}".format(player1_bank))
                 print("Player 2 has ${}".format(player2_bank))
                 print("")
@@ -135,6 +145,7 @@ while player1_bank > 0 and player2_bank > 0:
                 bet = bet * 2
                 player1_bank = player1_bank + bet
                 print("You rolled a {}. You win the round!".format(dice_total))
+                print("")
                 print("Player 1 has ${}".format(player1_bank))
                 print("Player 2 has ${}".format(player2_bank))
                 print("")
@@ -154,6 +165,7 @@ while player1_bank > 0 and player2_bank > 0:
                         player2_bank = player2_bank + bet
                         player1_bank = player1_bank - bet
                         print("You rolled a 7. You lost the round!")
+                        print("")
                         print("Player 1 has ${}".format(player1_bank))
                         print("Player 2 has ${}".format(player2_bank))
                         print("")
@@ -164,6 +176,7 @@ while player1_bank > 0 and player2_bank > 0:
                         bet = bet * 2
                         player1_bank = player1_bank + bet
                         print("You rolled your point number! You win the round!")
+                        print("")
                         print("Player 1 has ${}".format(player1_bank))
                         print("Player 2 has ${}".format(player2_bank))
                         print("")
@@ -182,6 +195,7 @@ while player1_bank > 0 and player2_bank > 0:
                                     player2_bank = player2_bank + bet
                                     player1_bank = player1_bank - bet
                                     print("You rolled a 7. You lost the round!")
+                                    print("")
                                     print("Player 1 has ${}".format(player1_bank))
                                     print("Player 2 has ${}".format(player2_bank))
                                     print("")
@@ -192,10 +206,14 @@ while player1_bank > 0 and player2_bank > 0:
                                     bet = bet * 2
                                     player1_bank = player1_bank + bet
                                     print("You rolled your point number! You win the round!")
+                                    print("")
                                     print("Player 1 has ${}".format(player1_bank))
                                     print("Player 2 has ${}".format(player2_bank))
                                     print("")
                                     break
         if player2_bank == 0:
-            print("Player 1 Wins!")
+            print("PLAYER 1 WINS!")
+            break
+        elif player1_bank == 0:
+            print("PLAYER 2 WINS!")
             break
