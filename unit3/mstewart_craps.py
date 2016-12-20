@@ -13,9 +13,6 @@ while player_bank > 0 and casino_bank > 0:
     elif bet == 0:
         print("You didn't bet anything.")
         print("")
-    elif bet == float(bet):
-        print("You can only bet whole numbers")
-        print("")
     elif bet > 0 and bet <= player_bank:
         print("")
         dice1 = random.choice([1,2,3,4,5,6])

@@ -5,7 +5,7 @@ print("Player 1 has ${}".format(player1_bank))
 print("Player 2 has ${}".format(player2_bank))
 player_pick = random.choice([1,2])
 if player_pick == 1:
-    print("Player 1 is the shooter")
+    print("PLAYER 1 IS THE CASINO")
     print("")
     while player1_bank > 0 and player2_bank > 0:
         bet = int(input("Player 2 place your bet: "))
@@ -18,7 +18,6 @@ if player_pick == 1:
         elif bet == 0:
             print("You didn't bet anything.")
             print("")
-        elif bet 
         elif bet > 0 and bet <= player2_bank:
             print("")
             dice1 = random.choice([1,2,3,4,5,6])
