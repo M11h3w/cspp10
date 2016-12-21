@@ -111,7 +111,7 @@ if player_pick == 1:
             print("PLAYER 1 WINS!")
             break
 elif player_pick == 2:
-    print("Player 2 is the shooter")
+    print("PLAYER 2 IS THE CASINO")
     print("")
     while player1_bank > 0 and player2_bank > 0:
         bet = int(input("Player 1 place your bet: "))

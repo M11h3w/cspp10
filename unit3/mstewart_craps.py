@@ -18,7 +18,7 @@ while player_bank > 0 and casino_bank > 0:
         dice1 = random.choice([1,2,3,4,5,6])
         dice2 = random.choice([1,2,3,4,5,6])
         dice_total = dice1 + dice2
-        print("The dice is thrown: {} and {}, {} total".format(dice1, dice2, dice_total))
+        print("The dice is thrown: {} total".format(dice_total))
         if dice_total == 2 or dice_total == 3 or dice_total == 12:
             casino_bank = casino_bank + bet
             player_bank = player_bank - bet
@@ -41,7 +41,7 @@ while player_bank > 0 and casino_bank > 0:
                 dice1 = random.choice([1,2,3,4,5,6])
                 dice2 = random.choice([1,2,3,4,5,6])
                 dice_total = dice1 + dice2
-                print("The dice is thrown: {} and {}, {} total".format(dice1, dice2, dice_total))
+                print("The dice is thrown: {} total".format(dice_total))
                 if dice_total == 7:
                     dice_total == 7
                     casino_bank = casino_bank + bet
@@ -66,7 +66,7 @@ while player_bank > 0 and casino_bank > 0:
                             dice1 = random.choice([1,2,3,4,5,6])
                             dice2 = random.choice([1,2,3,4,5,6])
                             dice_total = dice1 + dice2
-                            print("The dice is thrown: {} and {}, {} total".format(dice1, dice2, dice_total))
+                            print("The dice is thrown: {} total".format(dice_total))
                             if dice_total == 7:
                                 casino_bank = casino_bank + bet
                                 player_bank = player_bank - bet

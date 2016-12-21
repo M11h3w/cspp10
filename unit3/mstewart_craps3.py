@@ -55,7 +55,7 @@ def roll_again(bet, dice_total, point_number):
             dice_total == 7
             casino_bank = casino_bank + bet
             player_bank = player_bank - bet
-            print("You rolled a 7. You lost the round!")
+            print("You rolled a 7. You lost the round!") 
             print("You have ${}.".format(player_bank))
             print("")
             return player_bank
