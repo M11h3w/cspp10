@@ -1,6 +1,9 @@
 import random
 casino_bank = 1000
 player_bank = 100
+print("CRAPS")
+print("")
+print("")
 print("You have ${}".format(player_bank))
 while player_bank > 0 and casino_bank > 0:
     bet = int(input("Enter a whole number for your bet: "))

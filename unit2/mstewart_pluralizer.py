@@ -25,6 +25,3 @@ elif num == "0" or num > "1":
     else:
         s = "s"
         print(num + space + word + s)
-    
-        
-        
