@@ -6,6 +6,9 @@ player_wins = 0
 comp_wins = 0
 ties = 0
 round_num = 0
+print("ROCK PAPER SCISSORS")
+print("")
+print("")
 rounds = int(input("How many rounds do you want to play from 1 to 9: "))
 for rounds in range(rounds):
     round_num = round_num + 1
