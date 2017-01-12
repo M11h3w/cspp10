@@ -4,7 +4,7 @@ player_bank = 100
 bet = 1
 dice_total = 1
 point_number = 1
-def get_bet(bet):
+def get_bet(bet, player_bank):
     bet = int(input("Enter a whole number for your bet: "))
     if bet > player_bank:
         print("You don't have that much money!")
@@ -23,7 +23,7 @@ def roll_dice(dice_total):
     dice_total = dice1 + dice2
     print("The dice is thrown: {} and {}, {} total".format(dice1, dice2, dice_total))
     return dice_total
-def determine_roll(bet, dice_total, point_number):
+def determine_roll(casino_bank, player_bank, bet, dice_total, point_number):
     if dice_total == 2 or dice_total == 3 or dice_total == 12:
         casino_bank = casino_bank + bet
         player_bank = player_bank - bet
@@ -43,7 +43,7 @@ def determine_roll(bet, dice_total, point_number):
         point_number = dice_total
         print("Your point number is {}".format(point_number))
         return point_number
-def roll_again(bet, dice_total, point_number):
+def roll_again(casino_bank, player_bank, bet, dice_total, point_number):
     enter = input("Press enter to continue")
     print("")
     if enter == "":
@@ -93,11 +93,11 @@ def roll_again(bet, dice_total, point_number):
                         print("You have ${}.".format(player_bank))
                         print("")
                         return player_bank
-def craps(bet, dice_total, point_number):
-    get_bet(bet)
+def craps(bet, dice_total,casino_bank, player_bank, point_number):
+    get_bet(bet, player_bank)
     roll_dice(dice_total)
-    determine_roll(bet, dice_total, point_number)
-    roll_again(bet, dice_total, point_number)
+    determine_roll(casino_bank, player_bank, bet, dice_total, point_number)
+    roll_again(casino_bank, player_bank, bet, dice_total, point_number)
 
     
-craps(bet, dice_total, point_number)
+craps(bet, dice_total,casino_bank, player_bank, point_number)

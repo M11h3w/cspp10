@@ -103,7 +103,7 @@ if player_pick == 1:
                                     print("Player 1 has ${}".format(player1_bank))
                                     print("Player 2 has ${}".format(player2_bank))
                                     print("")
-                                     break
+                                    break
         if player1_bank == 0:
             print("PLAYER 2 WINS!")
             break
