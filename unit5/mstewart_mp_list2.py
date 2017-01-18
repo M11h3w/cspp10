@@ -1,9 +1,9 @@
 a_list = []
-
-
-
-
-
+print("Entering a number will add it to the list")
+print("Entering 'sum' will print the sum of the numbers in the list")
+print("Entering 'clear' will clear the list")
+print("Entering 'print' will print the list")
+print("Entering ")
 command = 1
 while command != "exit":
     command = input("Enter a command: ")

@@ -27,10 +27,3 @@ while num_input != 0:
         print("")
     elif int(num_input) == 0:
         break
-    # elif num_input == "replace":
-    #     replace1 = int(input("What do want to replace? "))
-    #     if replace1 in num_list:
-    #         print("True")
-    #     else:
-    #         print("False")
-    #     replace2 = int(input("What would you like to replace it with? "))
