@@ -23,7 +23,7 @@ if entry == 1:
         print("")
         while person1 >= 0:
             print("1. Withdraw \n2. Deposit \n3. Exit")
-            choice = input("Welcome to ATM! Pick from above [1|2|3]:")
+            choice = input("Welcome to ATM! Pick from above [1|2|3]: ")
             if choice == "1":
                 amount = input("How much to withdraw: ")
                 person1 = person1 - int(amount)
@@ -49,7 +49,7 @@ elif entry == 2:
         print("")
         while person2 >= 0:
             print("1. Withdraw \n2. Deposit \n3. Exit")
-            choice = input("Welcome to ATM! Pick from above [1|2|3]:")
+            choice = input("Welcome to ATM! Pick from above [1|2|3]: ")
             if choice == "1":
                 amount = input("How much to withdraw: ")
                 person2 = person2 - int(amount)
@@ -75,7 +75,7 @@ elif entry == 3:
         print("")
         while person3 >= 0:
             print("1. Withdraw \n2. Deposit \n3. Exit")
-            choice = input("Welcome to ATM! Pick from above [1|2|3]:")
+            choice = input("Welcome to ATM! Pick from above [1|2|3]: ")
             if choice == "1":
                 amount = input("How much to withdraw: ")
                 person3 = person3 - int(amount)
@@ -101,7 +101,7 @@ elif entry == 4:
         print("")
         while person4 >= 0:
             print("1. Withdraw \n2. Deposit \n3. Exit")
-            choice = input("Welcome to ATM! Pick from above [1|2|3]:")
+            choice = input("Welcome to ATM! Pick from above [1|2|3]: ")
             if choice == "1":
                 amount = input("How much to withdraw: ")
                 person4 = person4 - int(amount)
@@ -127,7 +127,7 @@ elif entry == 5:
         print("")
         while person5 >= 0:
             print("1. Withdraw \n2. Deposit \n3. Exit")
-            choice = input("Welcome to ATM! Pick from above [1|2|3]:")
+            choice = input("Welcome to ATM! Pick from above [1|2|3]: ")
             if choice == "1":
                 amount = input("How much to withdraw: ")
                 person5 = person5 - int(amount)
@@ -153,7 +153,7 @@ elif entry == 6:
         print("")
         while person6 >= 0:
             print("1. Withdraw \n2. Deposit \n3. Exit")
-            choice = input("Welcome to ATM! Pick from above [1|2|3]:")
+            choice = input("Welcome to ATM! Pick from above [1|2|3]: ")
             if choice == "1":
                 amount = input("How much to withdraw: ")
                 person6 = person6 - int(amount)
@@ -179,7 +179,7 @@ elif entry == 7:
         print("")
         while person7 >= 0:
             print("1. Withdraw \n2. Deposit \n3. Exit")
-            choice = input("Welcome to ATM! Pick from above [1|2|3]:")
+            choice = input("Welcome to ATM! Pick from above [1|2|3]: ")
             if choice == "1":
                 amount = input("How much to withdraw: ")
                 person7 = person7 - int(amount)
@@ -205,7 +205,7 @@ elif entry == 8:
         print("")
         while person8 >= 0:
             print("1. Withdraw \n2. Deposit \n3. Exit")
-            choice = input("Welcome to ATM! Pick from above [1|2|3]:")
+            choice = input("Welcome to ATM! Pick from above [1|2|3]: ")
             if choice == "1":
                 amount = input("How much to withdraw: ")
                 person8 = person8 - int(amount)
@@ -231,7 +231,7 @@ elif entry == 9:
         print("")
         while person9 >= 0:
             print("1. Withdraw \n2. Deposit \n3. Exit")
-            choice = input("Welcome to ATM! Pick from above [1|2|3]:")
+            choice = input("Welcome to ATM! Pick from above [1|2|3]: ")
             if choice == "1":
                 amount = input("How much to withdraw: ")
                 person9 = person9 - int(amount)
@@ -257,7 +257,7 @@ elif entry == 10:
         print("")
         while person10 >= 0:
             print("1. Withdraw \n2. Deposit \n3. Exit")
-            choice = input("Welcome to ATM! Pick from above [1|2|3]:")
+            choice = input("Welcome to ATM! Pick from above [1|2|3]: ")
             if choice == "1":
                 amount = input("How much to withdraw: ")
                 person10 = person10 - int(amount)
