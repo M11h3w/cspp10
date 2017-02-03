@@ -1,12 +1,13 @@
 import random
 word = input()
-# if len(word) == 4:
-#     dont_scarmble1 = word[0]
-#     dont_scramble2 = word[3]
-# elif len(word) > 4:
-#     word_l(word)
-#     word.split(" ")
-#     print(word)
-word.split(" ")
-random.shuffle(list(word))
-print(word)
+first = word[0]
+last = word[-1]
+if len(word) == 4:
+    word2 = word[1:3]
+    s = list(word2)
+    random.shuffle(s)
+    # print(word2)
+    print(s)
+# s = [1,2,3,4]
+# random.shuffle(s)
+# print(s)
