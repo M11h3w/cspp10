@@ -146,7 +146,7 @@ elif entry == 5:
 elif entry == 6:
     print("Hello Person 6!")
     password6 = input("Please enter the pssword: ")
-    if password5 == "person6":
+    if password6 == "person6":
         print("Thank You")
         print("")
         print("You have ${}".format(person6))
